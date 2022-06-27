@@ -15,12 +15,13 @@
     border: 1px solid rgb(197, 195, 195);
     border: 1px solid rgb(197, 195, 195);
     padding: 0 15px;
-    width: 300px;
     background-color: aliceblue;
     font-size: 24px;
     transition: all .5s;
     border: 2px dashed transparent;
     margin: 3px;
+    position: relative;
+
 
 }
 
@@ -64,4 +65,44 @@
 
 .btn:focus {
     outline: 0;
+}
+
+
+.__input {
+    display: block;
+    border-radius: 0;
+    border: 1px solid #988fb1;
+    padding: 10px 25px;
+
+}
+
+.__input:focus {
+    outline: 0;
+}
+
+.input__label {
+    display: block;
+    background-color: #988fb1;
+    color: #fff;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
+span.now {
+    position: absolute;
+    right: -160px;
+    z-index: -1;
+    transition: all 1s;
+    background-color: rgb(255, 148, 148);
+    color: #fff;
+    padding: 10px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+
+}
+
+span.now.show {
+    opacity: 1;
+    right: -260px;
+
 }
