@@ -148,7 +148,6 @@ function restItems() {
     draggables.forEach((elm) => {
         const itemIndex = parseInt(elm.getAttribute('data-reset'));
         listItems[itemIndex].appendChild(elm);
-        console.log(elm)
     });
 
 }
